@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="My Suit">
+    <test name="test1">
+
+        <!-- hangi gruplar çalıştırılacak-->
+        <groups>
+            <run>
+                <include name="Smoke Test"></include>
+            </run>
+        </groups>
+
+        <!--çalışcak classların yazıldığı bölüm-->
+        <classes>
+            <class name="US_501.Register"></class>
+            <class name="US_502.Login"></class>
+        </classes>
+
+    </test>
+</suite>

@@ -1,7 +1,18 @@
 package US_504;
 
-public class TabMenuControl {
-  @Test(priority = 4, groups = {"TabMenu"})
+import Utility.BaseDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import java.util.Arrays;
+import java.util.List;
+
+import static Utility.BaseDriver.driver;
+
+public class TabMenuControl extends BaseDriver {
+  @Test
     public void TC504(){  // TabMenu
         TabMenuControl_Elements elements = new TabMenuControl_Elements();
 

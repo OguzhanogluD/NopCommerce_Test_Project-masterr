@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="My suit">
+    <test name="Test1">
+        <parameter name="mesaj" value="First Prize Pies"></parameter>
+
+        <classes>
+            <class name="US_505.ControlProductsTabMenu"></class>
+        </classes>
+    </test>
+
+</suite>

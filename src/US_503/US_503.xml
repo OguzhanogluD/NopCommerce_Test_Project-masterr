@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="My Suit">
+    <test name="NegativLoginTest">
+
+        <!-- Login islemi icin sadece Groub -->
+        <groups>
+            <run>
+                <include name="Login Test"></include>
+                <include name="Smoke Test"></include>
+            </run>
+        </groups>
+
+        <!--6 kere yanlis giristen sonra register yapip 1 kez basarrili Login-->
+        <classes>
+            <class name="US_503.PositiveNegativeLogin"></class>
+            <class name="US_501.Register"></class>
+            <class name="US_502.Login"></class>
+        </classes>
+
+    </test>
+</suite>

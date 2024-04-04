@@ -31,6 +31,7 @@ public class Tools {
 
     public static void JavaScriptClick(WebElement element) {
         JavascriptExecutor jse = (JavascriptExecutor) BaseDriver.driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);", element);
         jse.executeScript("arguments[0].click();", element);
 
     }
@@ -45,5 +46,12 @@ public class Tools {
         return (int) (Math.random() * until);
     }
 
-
+    public static void ActionHover(WebElement element) {
+        Actions driverAksiyon = new Actions(BaseDriver.driver);
+        Action aksiyon = driverAksiyon.moveToElement(element).build();
+        BaseDriver.wait.until(ExpectedConditions.visibilityOf(element));
+        aksiyon.perform();
+    }
 }
+
+

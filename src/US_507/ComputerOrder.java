@@ -2,14 +2,9 @@ package US_507;
 
 import Utility.BaseDriver;
 import Utility.Tools;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-import java.time.Duration;
-import java.util.List;
 
 public class ComputerOrder extends BaseDriver {
 

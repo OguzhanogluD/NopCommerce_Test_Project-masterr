@@ -16,28 +16,28 @@ public class GiftOrdering_Elements {
     public WebElement giftCards;
 
 
-    @FindBy(linkText = "//a[text()='$25 Virtual Gift Card']")
+    @FindBy(xpath = "//a[text()='$25 Virtual Gift Card']")
     public WebElement randomGift;
 
-    @FindBy(className = "[class='recipient-name valid']")
+    @FindBy(xpath = "//input[@id='giftcard_43_RecipientName']")
     public WebElement recipentName;
 
     @FindBy(xpath = "//*[text()='Enter valid sender email']")
     public WebElement invalidTyping;
 
-    @FindBy(className = "[class='recipient-email valid']")
+    @FindBy(xpath = "//input[@id='giftcard_43_RecipientEmail']")
     public WebElement recipentEmail;
 
-    @FindBy(className = "[class='sender-name']")
-    public  WebElement yourName;
+    @FindBy(xpath = "//input[@id='giftcard_43_SenderName']")
+    public WebElement yourName;
 
-    @FindBy(className = "[class='sender-email']")
+    @FindBy(xpath = "//input[@id='giftcard_43_SenderEmail']")
     public WebElement yourEmail;
 
-    @FindBy(className = "[class='message']")
+    @FindBy(xpath = "//textarea[@id='giftcard_43_Message']")
     public WebElement messageBox;
 
-    @FindBy(id = "[id='add-to-cart-button-43']")
+    @FindBy(xpath = "//button[@id='add-to-cart-button-43']")
     public WebElement addcartButton;
 
 
@@ -47,12 +47,14 @@ public class GiftOrdering_Elements {
     @FindBy(xpath = "//ul[@class='top-menu notmobile']/li/a")
     public List<WebElement> tabMenu;
 
-    @FindBy(xpath = "//*[text()='The product has been added to your ']")
-    public WebElement lastAssertion;
+    @FindBy(xpath = "//p[@class='content']/a")
+    public WebElement greenShoppingCart;
 
 
+    @FindBy(xpath = "//div[@class='product-name']/h1")
+    public WebElement product1;
 
-
-
+    @FindBy(xpath = "//a[@class='product-name']")
+    public WebElement product2;
 
 }

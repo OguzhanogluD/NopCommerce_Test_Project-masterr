@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="my suit">
+    <test  name="test1">
+        <parameter name="message" value="Adobe Photoshop CS4"></parameter>
+        <classes>
+            <class name="US_508.ParameterizedSearch"></class>
+        </classes>
+    </test>
+</suite>

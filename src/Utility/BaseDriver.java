@@ -39,7 +39,7 @@ public class BaseDriver {
         wait = new WebDriverWait(driver, Duration.ofSeconds(25));
 
         driver.get("https://demo.nopcommerce.com/");
-        Login();
+       // Login();
 
 
     }
